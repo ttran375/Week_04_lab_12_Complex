@@ -154,45 +154,42 @@ Test Harness
 
 Insert the following code statements in your Program.cs file:
 
-<span class="mark">Complex c0 = new Complex(-2, 3);</span>
+``` cs
+Complex c0 = new Complex(-2, 3);
 
-<span class="mark">Complex c1 = new Complex(-2, 3);</span>
+Complex c1 = new Complex(-2, 3);
 
-<span class="mark">Complex c2 = new Complex(1, -2);</span>
+Complex c2 = new Complex(1, -2);
 
-<span class="mark">Console.WriteLine(\$"{c0}");</span>
+Console.WriteLine($"{c0}");
 
-<span class="mark">Console.WriteLine(c1);</span>
+Console.WriteLine(c1);
 
-<span class="mark">Console.WriteLine(c2);</span>
+Console.WriteLine(c2);
 
-<span class="mark">Console.WriteLine(\$"{c1} + {c2} = {c1 +
-c2}");</span>
+Console.WriteLine($"{c1} + {c2} = {c1 + c2}");
 
-<span class="mark">Console.WriteLine(\$"{c1} - {c2} = {c1 -
-c2}");</span>
+Console.WriteLine($"{c1} - {c2} = {c1 - c2}");
 
-<span class="mark">Complex c3 = c1 + c2;</span>
+Complex c3 = c1 + c2;
 
-<span class="mark">Console.WriteLine(\$"{c3} in polar form is
-{c3.Modulus:f2}cis({c3.Argument:f2})");</span>
+Console.WriteLine($"{c3} in polar form is {c3.Modulus:f2}cis({c3.Argument:f2})");
 
-<span class="mark">Console.WriteLine(\$"{c0} {(c0 == c1 ? "=" : "!=")}
-{c1}");</span>
+Console.WriteLine($"{c0} {(c0 == c1 ? "=" : "!=")} {c1}");
 
-<span class="mark">Console.WriteLine(\$"{c0} {(c0 == c2 ? "=" : "!=")}
-{c2}");</span>
+Console.WriteLine($"{c0} {(c0 == c2 ? "=" : "!=")} {c2}");
+```
 
 # Additional tasks
 
-1.  Try to overload the \* operator. Multiplication of two complex
+1. Try to overload the \* operator. Multiplication of two complex
     numbers is defined by the following relation: \<a, b\> \* \<c, d\> =
     \<ac-bd, ad+bc\>.
 
 Insert the proper code statements in your main to show the operation of
 this operator.
 
-2.  Try to overload the unary - operator. This operator simply changes
+2. Try to overload the unary - operator. This operator simply changes
     the sign of the operand: -\<a, b\> = \<-a, -b\>.
 
 Again, insert the proper code statements in your main to show the

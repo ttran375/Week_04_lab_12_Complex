@@ -83,14 +83,14 @@ square of the Real and Imaginary parts of this type
 \[$\sqrt{{Real}^{2} + {Imaginary}^{2}}$\]. The getter is public and the
 setter is **absent**.
 
-Both Modulus and Argument are computed property and Zero is a factory
-property.
-
 **Argument** – this double represents the complex argument or the angle
 it make with the horizontal axis. It is calculated as the inverse tan of
 the ratio of the Real to the Imaginary part of this type
 \[$\tan^{- 1}{(\frac{Imaginary}{Real})}$\]. The getter is public and the
 setter is **absent**.
+
+Both Modulus and Argument are computed property and Zero is a factory
+property.
 
 **Zero** – this static property returns a new complex object with both
 the real and the imaginary parts equal to 0. The getter is public and of
@@ -112,43 +112,32 @@ pair.
 
 public static Complex operator +(Complex lhs, Complex rhs)
 
-The return type
-
-The operator that you want to overload
-
-First operand
-
-Second operand
-
-Signals that you are overloading an operator
+![Operators](operators.png)
 
 \+ – You will overload the plus operator to add the two numbers. Copy
 the code below into your type declaration to overload the + operator.
 
-<span class="mark">public static Complex operator +(Complex lhs, Complex
-rhs)</span>
+``` cs
+public static Complex operator +(Complex lhs, Complex rhs)
+{
+    int real = lhs.Real + rhs.Real;
+    int imaginary = lhs.Imaginary + rhs.Imaginary;
+    return new Complex(real, imaginary);
+}
 
-<span class="mark">{</span>
-
-<span class="mark">int real = lhs.Real + rhs.Real;</span>
-
-<span class="mark">int imaginary = lhs.Imaginary + rhs.Imaginary;</span>
-
-<span class="mark">return new Complex(real, imaginary);</span>
-
-<span class="mark">}</span>
+```
 
 **-** – You will also overload the minus operator. Examine the code
 above and then try to implement this operator.
+
+**==** – You will also overload the equal-equal operator. Examine the
+code above and then try to implement this operator. What should the
+return type of the method be?
 
 Some operators have to be overloaded in pairs. This is one of them.
 
 So you will also have to overload the **==** and the **!=** operator at
 the same time
-
-**==** – You will also overload the equal-equal operator. Examine the
-code above and then try to implement this operator. What should the
-return type of the method be?
 
 Test Harness
 
@@ -186,11 +175,11 @@ Console.WriteLine($"{c0} {(c0 == c2 ? "=" : "!=")} {c2}");
     numbers is defined by the following relation: \<a, b\> \* \<c, d\> =
     \<ac-bd, ad+bc\>.
 
-Insert the proper code statements in your main to show the operation of
-this operator.
+    Insert the proper code statements in your main to show the operation of
+    this operator.
 
 2. Try to overload the unary - operator. This operator simply changes
     the sign of the operand: -\<a, b\> = \<-a, -b\>.
 
-Again, insert the proper code statements in your main to show the
-operation of this operator.
+    Again, insert the proper code statements in your main to show the
+    operation of this operator.

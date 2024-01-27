@@ -1,5 +1,9 @@
 # The Complex class
 
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/ttran375/comp123-lab12)
+
+[![Style Check](https://github.com/ttran375/comp123-lab12/actions/workflows/main.yml/badge.svg)](https://github.com/ttran375/comp123-lab12/actions/workflows/main.yml)
+
 This exercise you will be exploring more about properties and be
 introduced to overloading operators.
 

@@ -180,7 +180,7 @@ Console.WriteLine($"{c0} {(c0 == c1 ? "=" : "!=")} {c1}");
 Console.WriteLine($"{c0} {(c0 == c2 ? "=" : "!=")} {c2}");
 ```
 
-# Additional tasks
+## Additional tasks
 
 1. Try to overload the \* operator. Multiplication of two complex
     numbers is defined by the following relation: \<a, b\> \* \<c, d\> =

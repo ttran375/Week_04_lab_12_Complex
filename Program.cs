@@ -1,4 +1,4 @@
-﻿namespace Week_04_lab_012_Complex_W
+﻿namespace Week_04_lab_12_Complex_W
 {
     internal class Program
     {
